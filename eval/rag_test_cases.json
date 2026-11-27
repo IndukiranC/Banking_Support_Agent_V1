@@ -1,0 +1,68 @@
+[
+  {
+    "query": "What are Officially Valid Documents (OVD) for individual KYC?",
+    "expected_grounded": true,
+    "expected_document_contains": "KYC",
+    "expected_section_contains": "Section 16",
+    "expected_content_keywords": ["Passport", "Aadhaar", "Voter", "Driving Licence"]
+  },
+  {
+    "query": "What is the periodic KYC updation frequency for high risk and low risk accounts?",
+    "expected_grounded": true,
+    "expected_document_contains": "KYC",
+    "expected_section_contains": "Section 38",
+    "expected_content_keywords": ["2 years", "10 years"]
+  },
+  {
+    "query": "What is the insurance coverage limit under DICGC for bank failure?",
+    "expected_grounded": true,
+    "expected_document_contains": "DICGC",
+    "expected_section_contains": "Section 16(1)",
+    "expected_content_keywords": ["5,00,000", "Five Lakhs"]
+  },
+  {
+    "query": "How many days must a customer wait for bank grievance redressal before filing RBI Ombudsman complaint?",
+    "expected_grounded": true,
+    "expected_document_contains": "Ombudsman",
+    "expected_section_contains": "Clause 10",
+    "expected_content_keywords": ["30 days"]
+  },
+  {
+    "query": "What is the Cash Transaction Report CTR threshold for cash under PMLA?",
+    "expected_grounded": true,
+    "expected_document_contains": "PMLA",
+    "expected_section_contains": "Rule 3(1)(A)",
+    "expected_content_keywords": ["ten lakhs", "10,00,000"]
+  },
+  {
+    "query": "How long must banks retain transaction and identity records under AML rules?",
+    "expected_grounded": true,
+    "expected_document_contains": "PMLA",
+    "expected_section_contains": "Section 12(1)",
+    "expected_content_keywords": ["five years"]
+  },
+  {
+    "query": "What is the maximum compensation ceiling under the Reserve Bank Integrated Ombudsman Scheme?",
+    "expected_grounded": true,
+    "expected_document_contains": "Ombudsman",
+    "expected_section_contains": "Clause 14",
+    "expected_content_keywords": ["20,00,000", "Twenty Lakhs"]
+  },
+  {
+    "query": "Can banks charge a minimum balance penalty on dormant or inoperative accounts?",
+    "expected_grounded": true,
+    "expected_document_contains": "KYC",
+    "expected_section_contains": "Section 43",
+    "expected_content_keywords": ["inoperative", "not levy penal charges"]
+  },
+  {
+    "query": "What is the procedure to apply for an aerospace satellite launch license in India?",
+    "expected_grounded": false,
+    "expected_notes": "Out of corpus query - should gracefully refuse with official source advice"
+  },
+  {
+    "query": "What is the capital gains tax on cryptocurrency mining in Japan?",
+    "expected_grounded": false,
+    "expected_notes": "Out of corpus query - should gracefully refuse"
+  }
+]
